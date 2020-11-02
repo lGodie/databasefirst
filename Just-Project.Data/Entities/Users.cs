@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Just_Project.Data.Entities
 {
-    public partial class Users
+    public partial class Users : IEntity
     {
         public int Id { get; set; }
         public string Username { get; set; }

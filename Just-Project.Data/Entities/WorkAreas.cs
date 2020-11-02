@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Just_Project.Data.Entities
 {
-    public partial class WorkAreas
+    public partial class WorkAreas : IEntity
     {
         public WorkAreas()
         {

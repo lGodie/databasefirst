@@ -21,15 +21,6 @@ namespace Just_Project.Data.Entities
         public virtual DbSet<WorkAreas> WorkAreas { get; set; }
         public virtual DbSet<WorkSubAreas> WorkSubAreas { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=RENTATIC-0286;Database=TestRappi;Persist Security Info=True;User ID=sa;Password=Software1;MultipleActiveResultSets=True;App=EntityFramework;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            }
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<IdentificationTypes>(entity =>
